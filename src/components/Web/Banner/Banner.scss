@@ -1,0 +1,29 @@
+@import "~/src/scss/index.scss";
+
+.banner{
+    height: 500px;
+    background-image: url("../../../assets/jpg/home-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h1{
+            font-size: 60px;
+            line-height: 55px;
+            z-index: 1;
+            color: $text-light;
+        }
+        h2{
+            color: $text-light;
+            font-weight: 100;
+            font-size: 22px;
+            z-index: 1;
+        }
+    }
+}

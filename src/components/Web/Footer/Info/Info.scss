@@ -1,0 +1,17 @@
+@import "~/src/scss/index.scss";
+
+.footer-block {
+  color: $text-dark;
+
+  // .logo {
+  //   width: 100px;
+  // }
+  &__NameBlog{
+    font-size: 25px;
+    
+  }
+  p {
+    margin: 10px 0;
+    
+  }
+}

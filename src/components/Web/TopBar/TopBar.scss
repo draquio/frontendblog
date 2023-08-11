@@ -1,0 +1,43 @@
+@import "~/src/scss/index.scss";
+.top-bar {
+  // height: 60px;
+  // background-color: $background-white;
+  padding: 15px 0;
+  max-width: 1100px;
+  margin: auto;
+  > .ui.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  &__left {
+    .logo {
+      .logo-title {
+        font-size: 30px;
+        color: $text-dark;
+        font-family: 'Lobster', cursive;
+      }
+    }
+
+    .menu {
+      margin-left: 20px;
+      a {
+        margin: 0 5px;
+        color: $text-light;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $small-responsive) {
+  .top-bar .ui.container {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+}

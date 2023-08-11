@@ -1,0 +1,40 @@
+@import "~/src/scss/index.scss";
+
+
+.auth{
+    // font-family: "Open Sans", sans-serif;
+    // background-image: url("../../../assets/jpg/auth-bg.jpg");
+    background: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    .logo_login{
+        font-size: 40px;
+        margin-bottom: 30px;
+        color:$text-dark;
+        font-family: 'Lobster', cursive;
+    }
+
+    &__forms {
+        width: 450px;
+        box-shadow: $box-shadow;
+        .ui.menu{
+            .item{
+                width: 50%;
+                justify-content: center;
+                background-color: #ffffff;
+                border-top: 3px solid $border-grey !important;
+                // box-shadow: $box-shadow;
+                font-size: 18px;
+                font-family: "Open Sans", sans-serif;
+                &.active{
+                    font-weight: normal;
+                    border-radius: 0 !important;
+                    border-top-color: $primary !important;
+                }
+            }
+        }
+    }
+}

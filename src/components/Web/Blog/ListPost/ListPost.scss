@@ -1,0 +1,58 @@
+@import "~/src/scss/index.scss";
+
+.list-post-web {
+  min-height: 720px;;
+  margin-top: 30px;
+  // padding: 30px 0;
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    .item {
+      width: 300px;
+      h2{
+        font-weight: 800;
+      }
+      a img{
+        height: 200px;
+      }
+      
+    }
+  }
+  .pagination {
+    color:$text-dark;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    a {
+      color: $text-dark !important;
+      opacity: 0.6;
+      &.active {
+        opacity: 1;
+        border-color: $text-dark!important;
+      }
+    }
+  }
+}
+
+@media (max-width: $medium-responsive){
+  .list-post-web .list{
+    flex-direction: column;
+    align-content: center;
+    .item{
+      width: 70%;
+      a img{
+        height: none !important;
+      }
+    }
+  }
+}
+@media (max-width: $small-responsive){
+  .list-post-web .list .item{
+      width: 95%;
+    }
+
+}

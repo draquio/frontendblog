@@ -1,0 +1,22 @@
+@import "~/src/scss/index.scss";
+
+.list-post-item{
+    .ui.image{
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 16px;
+        color:$text-dark;
+        margin-top: 5px;
+        font-weight: normal;
+        height: 90px;
+    }
+    .date-post {
+        margin-top: 5px;
+        color: $text-dark;
+        opacity: 0.9;
+        font-size: 12px;
+        font-style: italic;
+    }
+}

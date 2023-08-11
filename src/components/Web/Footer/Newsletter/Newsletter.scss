@@ -1,0 +1,7 @@
+@import "~/src/scss/index.scss";
+.footer-block {
+  > h4 {
+    color: $text-dark;
+    margin-bottom: 20px;
+  }
+}

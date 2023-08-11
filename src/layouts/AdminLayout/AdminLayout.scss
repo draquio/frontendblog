@@ -1,0 +1,43 @@
+@import "~/src/scss/index.scss";
+
+$widthLeftMenu: 200px;
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: $background-grey;
+
+  &__left {
+    background-color: $background;
+    width: $widthLeftMenu;
+    color:$text-dark;
+    .logo {
+      font-size: 30px;
+      color:$text-dark;
+      margin-left: 15px;
+      font-family: 'Lobster', cursive;
+    }
+  }
+
+  &__right{
+    width: calc(100% - $widthLeftMenu);
+    
+    &-header{
+      background-color: $background;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      padding: 0 10px;
+    }
+    &-content{
+      position: relative;
+      margin: 20px;
+      .ui.segment{
+        min-height: 700px;
+      }
+    }
+  }
+}
+

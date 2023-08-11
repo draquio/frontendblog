@@ -1,0 +1,10 @@
+@import "./colors.scss";
+@import "./responsive.scss";
+@import "./fonts.scss";
+
+.loader-size{
+    min-height: 720px;
+}
+.ui.loader:before, .ui.loader:after{
+    top:50%;
+}
