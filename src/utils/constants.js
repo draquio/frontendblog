@@ -1,4 +1,4 @@
-const SERVER_IP = "localhost:3977";
+const SERVER_IP = "mern-blog-153m.onrender.com";
 
 export const ENV = {
     BASE_PATH: `http://${SERVER_IP}`,
