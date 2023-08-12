@@ -1,4 +1,4 @@
-const SERVER_IP = "mern-blog-153m.onrender.com";
+const SERVER_IP = "backendblog-biq9hi3w6-draquio.vercel.app";
 
 export const ENV = {
     BASE_PATH: `https://${SERVER_IP}`,
