@@ -1,4 +1,4 @@
-import { ENV } from "../utils";
+import { ENV, createPath } from "../utils";
 
 export class Post {
   baseApi = ENV.BASE_API;
@@ -22,6 +22,7 @@ export class Post {
   async createPost(accessToken, data) {
     try {
       const formData = new FormData();
+      data.path = createPath(data.title);
       Object.keys(data).forEach((key) => {
         formData.append(key, data[key]);
       });

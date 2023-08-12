@@ -16,7 +16,7 @@
         font-weight: 800;
       }
       a img{
-        height: 200px;
+        height: 170px;
       }
       
     }
@@ -44,15 +44,16 @@
     align-content: center;
     .item{
       width: 70%;
-      a img{
-        height: none !important;
-      }
+
     }
   }
 }
 @media (max-width: $small-responsive){
   .list-post-web .list .item{
       width: 95%;
+      a img{
+        height: auto;
+      }
     }
 
 }

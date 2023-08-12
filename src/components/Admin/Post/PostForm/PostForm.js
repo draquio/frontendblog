@@ -62,13 +62,6 @@ export function PostForm(props) {
           value={formik.values.title}
           error={formik.errors.title}
         />
-        <Form.Input
-          name="path"
-          placeholder="path del post"
-          onChange={formik.handleChange}
-          value={formik.values.path}
-          error={formik.errors.path}
-        />
       </Form.Group>
       <Editor
         apiKey="1e0znhaczp4y8py1r48b5vz8kds11ylr0vx6r19bedojavlv"

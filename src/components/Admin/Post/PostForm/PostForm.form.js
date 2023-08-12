@@ -13,7 +13,7 @@ export function initialValues(post) {
 export function validationSchema() {
   return Yup.object({
     title: Yup.string().required(true),
-    path: Yup.string().required(true),
+    path: Yup.string(),
     content: Yup.string().required(true),
     miniature: Yup.string().required(true),
   });
