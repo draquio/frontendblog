@@ -24,7 +24,7 @@ export function ListPost() {
           pages: response.pages,
           total: response.total,
         });
-        
+        window.scrollTo(0, 0)
       } catch (error) {
         console.error(error);
       }

@@ -20,6 +20,7 @@ export function Post() {
           .toFormat("LLLL dd, yyyy");
           response.create_at = newdate;
         setPost(response);
+        window.scrollTo(0, 0)
       } catch (error) {
         console.error(error);
       }
