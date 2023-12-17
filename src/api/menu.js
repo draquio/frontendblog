@@ -1,5 +1,8 @@
 import { ENV } from "../utils";
 
+export const Menuconfig = {
+  runtime: 'experimental-edge',
+};
 export class Menu {
   baseApi = ENV.BASE_API;
 

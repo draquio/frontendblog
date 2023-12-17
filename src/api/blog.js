@@ -1,5 +1,9 @@
 import { ENV, createPath } from "../utils";
 
+export const Blogconfig = {
+  runtime: 'experimental-edge',
+};
+
 export class Post {
   baseApi = ENV.BASE_API;
   async getPost(page = 1, limit = 10) {

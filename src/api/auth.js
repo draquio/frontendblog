@@ -1,4 +1,9 @@
 import { ENV } from "../utils";
+
+export const Authconfig = {
+  runtime: 'experimental-edge',
+};
+
 export class Auth {
   baseApi = ENV.BASE_API;
   async register(data) {

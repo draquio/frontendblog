@@ -1,5 +1,10 @@
 import { ENV } from "../utils";
 
+
+export const Userconfig = {
+  runtime: 'experimental-edge',
+};
+
 export class User {
   baseApi = ENV.BASE_API;
   async getMe(accessToken) {

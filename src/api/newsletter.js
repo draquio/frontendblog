@@ -1,5 +1,9 @@
 import { ENV } from "../utils";
 
+export const Newsletterconfig = {
+  runtime: 'experimental-edge',
+};
+
 export class Newsletter {
   baseApi = ENV.BASE_API;
   async getEmails(accessToken, page = 1, limit = 10) {
